@@ -102,10 +102,10 @@ public class SudokuVerifier {
 
 	}
 
-	// checks whether String is LENGTH characters long
+	// checks whether String in not null and is LENGTH characters long
 	public boolean lengthChecker(String stringToCheck) {
 		boolean result = false;
-		if (stringToCheck.length() == LENGTH) {
+		if (stringToCheck != null && stringToCheck.length() == LENGTH) {
 			result = true;
 		}
 				return result;
